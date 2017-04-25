@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+}
+* {
+    color: blue;
+    background-color: #222222;
+}
+p.second-paragraph {
+    color:aqua;
+}
+span {
+    background-color: fuchsia;
+}
+div {
+    border-color: orange;
+}
