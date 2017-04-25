@@ -1,16 +1,19 @@
-h1 {
-    color: white;
-}
 * {
     color: orangered;
     background-color: #222222;
+    font-family: sans-serif;
 }
-p.second-paragraph {
-    color:aqua;
+h1 {
+    color: white;
 }
-span {
-    background-color: fuchsia;
+h2 {
+    color: white;
 }
-div {
-    border: 5px solid red;
+article {
+    border: 5px solid blue;
+    padding: 0px 5px 5px 10px;
+    margin: 15px 5px 10px 5px;
+}
+footer {
+    border: 3px ridge blue;
 }
