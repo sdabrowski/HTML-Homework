@@ -1,8 +1,8 @@
 h1 {
-    color: red;
+    color: white;
 }
 * {
-    color: blue;
+    color: orangered;
     background-color: #222222;
 }
 p.second-paragraph {
@@ -12,5 +12,5 @@ span {
     background-color: fuchsia;
 }
 div {
-    border-color: orange;
+    border: 5px solid red;
 }
