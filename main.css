@@ -42,16 +42,17 @@ h2, h3, h4{
     text-transform: uppercase;
 }
 
-nav{
-    text-align: right;
-}
-
-header a{
+header li a{
     color: black;
 }
 
-header a:hover{
+header li a:hover{
+    box-shadow: inset 0 3px 0 0 #45A2DA;
     color: #45A2DA;
+}
+
+header li{
+    display: inline-block;
 }
 
 footer{
@@ -61,5 +62,13 @@ footer{
 }
 
 footer a{
+    color: white;
+}
+
+.alt-link{
+    background-color: black;
+}
+
+.alt-link a{
     color: white;
 }
