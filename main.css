@@ -109,7 +109,8 @@ footer a{
 }
 
 ul{
-    list-style-type: &bull;
+    list-style-type: "&bull";
+    color: white;
 }
 
 li:before {
