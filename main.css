@@ -109,10 +109,24 @@ footer a{
 }
 
 ul{
-    list-style-type: "&bull";
+    list-style-type: disc;
     color: white;
+    list-style-position: inside;
+    padding-left: 0px;
 }
 
-li:before {
-  content: &bull;
+.quicklinks li{
+    display: inline;
 }
+
+.quicklinks li:after{
+    content: " \00b7";
+}
+
+
+.quicklinks li.alt-link:after{
+    content: "";
+}
+
+
+
