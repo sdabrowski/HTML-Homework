@@ -15,6 +15,11 @@ body{
     font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+article{
+    background-color: #ddd;
+    width: 100%;
+}
+
 article p{
     color: #848484;
 }
@@ -74,22 +79,26 @@ footer a{
 
 .container{
     display: flex;
-    width: 960px;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 76%;
     margin: 0 auto;
 }
+
+div[class^="col-"]{
+    flex-basis: 17%;
+}
 .col-1-2{
-    width: 50%;
+    flex-grow: 3;
 }
 
 .col-1-3{
-    width: 33%;
+    flex-grow: 2;
 }
 
 .col-2-3{
-    width: 67%;
+    flex-grow: 4;
 }
-
-
 
 /*
 .container{
@@ -145,10 +154,28 @@ ul{
     content: " \00b7";
 }
 
-
 .quicklinks li.alt-link:after{
     content: "";
 }
 
 
+@media all and (max-width: 800px){
+    *[class*='col']
+    {
+        float: none;
+        width: 100%;
+    }
+}
 
+@media all and (max-width:400px){
+    .col-1-2 img{
+        display: none;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .container{
+    flex-direction: column;
+    }
+}
